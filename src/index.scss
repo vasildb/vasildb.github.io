@@ -1,0 +1,104 @@
+$black: #020a13;
+$white: #fffdfc;
+
+body {
+	width: 100%;
+	background-color: $white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+	.nav {
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+		border-bottom: 1px solid #eee;
+		font-size: 16px;
+
+		:first-child {
+			margin-right: auto !important;
+		}
+
+		a {
+			padding: 20px;
+			text-decoration: none;
+			color: $black;
+		}
+	}
+
+	&.dark {
+		background-color: $black;
+		color: $white;
+		.nav {
+			border-bottom-color: #ccc;
+
+			a {
+				color: $white;
+			}
+		}
+
+		.logos {
+			.github {
+				background-image: url("/assets/images/github-light.svg");
+			}
+			.linkedin {
+				background-image: url("/assets/images/linkedin-light.svg");
+			}
+			.php {
+				background-image: url("/assets/images/php-light.svg");
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	#root {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	#root {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#root {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+.logos {
+	display: flex;
+	justify-content: start;
+
+	div {
+		margin: 10px 20px;
+		width: 24px;
+		height: 24px;
+		background-size: cover;
+
+		&.github {
+			background-image: url("/assets/images/github-dark.svg");
+		}
+
+		&.linkedin {
+			background-image: url("/assets/images/linkedin-dark.svg");
+		}
+
+		&.php {
+			background-image: url("/assets/images/php-dark.svg");
+		}
+	}
+}
+
+.footer {
+	border-top: 1px solid #eee;
+	margin-top: 100px;
+}
+
+.content {
+	margin: 20px;
+}
