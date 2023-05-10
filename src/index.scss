@@ -1,5 +1,8 @@
 $black: #020a13;
 $white: #fffdfc;
+$codeBg: #f6f8fa;
+$code: #1f2328;
+$attention: #fff8c5;
 
 body {
 	width: 100%;
@@ -45,6 +48,19 @@ body {
 			}
 			.php {
 				background-image: url("/assets/images/php-light.svg");
+			}
+		}
+
+		.contact-page {
+			.titles {
+				span {
+					border: 1px solid #eee;
+					color: $black;
+					background-color: white;
+					&:hover {
+						background-color: $attention;
+					}
+				}
 			}
 		}
 	}
@@ -102,4 +118,60 @@ body {
 
 .content {
 	margin: 20px;
+}
+
+.code {
+	color: $code;
+	background-color: $codeBg;
+	padding: 12px;
+}
+
+.contact-page {
+	.titles {
+		margin: 20px 0;
+
+		span {
+			padding: 6px;
+			border: 1px solid #eee;
+			margin: 4px;
+			border-radius: 4px;
+			cursor: pointer;
+			&:hover {
+				background-color: $attention;
+			}
+		}
+	}
+
+	.text {
+		width: 100%;
+
+		textarea {
+			margin: 0 auto;
+			width: 60%;
+			height: 200px;
+			border: 1px solid #eee;
+		}
+	}
+	.send {
+		margin: 10px 0 40px 0;
+	}
+}
+
+.btn {
+	padding: 6px 12px;
+	border-radius: 4px;
+	margin: 2px;
+	background-color: #64748b;
+	color: $white;
+	border-color: transparent;
+	cursor: pointer;
+
+	&.link {
+		border: 0;
+		background-color: transparent;
+		color: #007bff;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
