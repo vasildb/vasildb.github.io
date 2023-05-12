@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
-$black: #020a13;
+$black: #23272f;
 $white: #fffdfc;
 $codeBg: #f6f8fa;
 $code: #1f2328;
@@ -67,6 +67,19 @@ body {
 					}
 				}
 			}
+
+			.text {
+				textarea,
+				input {
+					background-color: black;
+					border-color: black;
+					color: white;
+				}
+			}
+		}
+
+		::placeholder {
+			color: white;
 		}
 
 		.homepage {
@@ -243,6 +256,8 @@ body {
 			font-family: "Ubuntu", sans-serif;
 			font-size: 16px;
 			border-radius: 2px;
+			box-sizing: border-box;
+			background-color: $white;
 		}
 
 		input {
@@ -253,6 +268,8 @@ body {
 			font-family: "Ubuntu", sans-serif;
 			font-size: 16px;
 			border-radius: 2px;
+			box-sizing: border-box;
+			background-color: $white;
 		}
 	}
 	.send {
@@ -373,4 +390,27 @@ a {
 			}
 		}
 	}
+}
+
+.user-message {
+	padding: 10px;
+	border: 1px solid #eee;
+	border-radius: 8px;
+	margin: 4px 0;
+	box-sizing: border-box;
+
+	&.error {
+		border-color: red;
+		background-color: rgba(255, 0, 0, 0.2);
+	}
+
+	&.success {
+		border-color: green;
+		background-color: rgba(0, 128, 0, 0.2);
+	}
+}
+
+.validation-error {
+	color: rgba(255, 0, 0, 0.6);
+	padding: 4px 4px;
 }
