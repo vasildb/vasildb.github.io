@@ -3,14 +3,33 @@ function Home() {
 		<div className="homepage">
 			<div className="bio">
 				<div className="info">
-					asd sa kfjhsd fksdfh sdkjfhsdasd sa kfjhsd fksdfh sdkjfhsdasd sa kfjhsd fksdfh sdkjfhsdasd sa kfjhsd fksdfh sdkjfhsdasd sa kfjhsd fksdfh sdkjfhsd
+					I've been building stuff for the web since 2007, for clients spanning from early-stage startups, to medium-sized companies and governments, from scripts built just for fun, with myself being the only user, to platforms
+					used by millions.
+					<br />
+					<br />I can help you build beautiful things, and come up with great solutions to your business problems and ideas, no matter the complexity.
 					<br />
 					<br />
-					And in between, I swim, bike and&nbsp;
+					Sometimes I{" "}
+					<a href="https://www.nulius.com/blog/the-art-of-writing-a-project-proposal" target="_blank">
+						write
+					</a>
+					,{" "}
+					<a href="https://www.facebook.com/events/772693189913606?ref=newsfeed" target="_blank">
+						speak
+					</a>{" "}
+					at{" "}
+					<a href="https://www.facebook.com/predaplus.eu/posts/pfbid02HtKzuRjBuYEv2us6a4MfUKRAtUggpgtgsGvq4nBWF4SoG4mjsKEkK8qRTxbLcnDKl" target="_blank">
+						public events
+					</a>
+					, and sometimes others{" "}
+					<a href="https://relaxirano.mk/News/5131/intervju-so-vasil-zidrovski-inovator-i-mlad-chovek-so-interesn-pogled-na-svetot" target="_blank">
+						say
+					</a>{" "}
+					something about me. In between all this, I swim, bike, and{" "}
 					<a href="https://utmb.world/en/runner/4221680.vasil.zidrovski" target="_blank">
 						run
 					</a>
-					.
+					. <br />
 				</div>
 			</div>
 			<div className="projects">
