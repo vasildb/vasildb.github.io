@@ -86,7 +86,7 @@ function Contact() {
 		setSubject(sub);
 	};
 
-	const escapeSingleQuote = (s) => {
+	const escapeSingleQuote = (s: string) => {
 		return s.replaceAll("'", "'\\''");
 	};
 
