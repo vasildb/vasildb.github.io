@@ -86,8 +86,17 @@ function Contact() {
 		setSubject(sub);
 	};
 
+	const escapeSingleQuote = (s) => {
+		return s.replaceAll("'", "'\\''");
+	};
+
 	const calcCurl = () => {
-		return ["curl --location https://" + contactHost + "'/contact' \\ ", "--header 'Content-Type: application/x-www-form-urlencoded' \\ ", "--data-urlencode 'email=" + email + "' \\ ", "--data-urlencode 'message=" + message + "'"];
+		return [
+			"curl -X POST https://" + contactHost + "/contact \\ ",
+			"--header 'Content-Type: application/x-www-form-urlencoded' \\ ",
+			"--data-urlencode 'email=" + escapeSingleQuote(email) + "' \\ ",
+			"--data-urlencode 'message=" + escapeSingleQuote(message) + "'",
+		];
 	};
 
 	const calcHTTP = () => {
