@@ -7,7 +7,7 @@ function DarkModeToggle() {
 	return (
 		<div className="toggleWrapper">
 			<input type="checkbox" className="dn" id="dn" checked={colorScheme === "dark"} onChange={() => setColorScheme(colorScheme === "dark" ? "light" : "dark")} />
-			<label htmlFor="dn" className="toggle">
+			<label htmlFor="dn" className="toggle" aria-label="dn">
 				<span className="toggle__handler">
 					<span className="crater crater--1"></span>
 					<span className="crater crater--2"></span>

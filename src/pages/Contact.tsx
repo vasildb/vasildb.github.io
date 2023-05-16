@@ -146,7 +146,7 @@ function Contact() {
 					{userMessage && <div className={"user-message" + (userMessage.success ? " success" : " error")}>{userMessage.message}</div>}
 					<input type="email" placeholder="Your email address" onChange={(e) => setEmail(e.target.value)} value={email} />
 					{validationErrors.email && <div className="validation-error">{validationErrors.email}</div>}
-					<textarea value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+					<textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Your message. Click on the above options to get inspired..."></textarea>
 					{validationErrors.message && <div className="validation-error">{validationErrors.message}</div>}
 					<div className="send">
 						<button className="btn" onClick={send} disabled={isSending}>

@@ -14,13 +14,13 @@ function Layout() {
 				<Outlet />
 			</div>
 			<div className="footer logos">
-				<a href="https://github.com/vasildb" target="_blank">
+				<a href="https://github.com/vasildb" target="_blank" title="Github" aria-label="My Github Profile">
 					<div className="github" />
 				</a>
-				<a href="https://www.linkedin.com/in/vasilz/" target="_blank">
+				<a href="https://www.linkedin.com/in/vasilz/" target="_blank" title="LinkedIn" aria-label="My LinkedIn Profile">
 					<div className="linkedin" />
 				</a>
-				<a href="https://www.zend-zce.com/en/yellow-pages/ZEND022160" target="_blank">
+				<a href="https://www.zend-zce.com/en/yellow-pages/ZEND022160" target="_blank" title="Zend ZCE" aria-label="My Zend PHP Certification">
 					<div className="php" />
 				</a>
 			</div>

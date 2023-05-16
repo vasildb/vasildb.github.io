@@ -41,6 +41,10 @@ body {
 			}
 		}
 
+		a {
+			color: #5eead4;
+		}
+
 		.logos {
 			.github {
 				background-image: url("/assets/images/github-light.svg");
@@ -95,6 +99,12 @@ body {
 						}
 					}
 				}
+			}
+		}
+
+		.btn {
+			&.link {
+				color: #5eead4;
 			}
 		}
 	}
@@ -287,7 +297,7 @@ body {
 	&.link {
 		border: 0;
 		background-color: transparent;
-		color: #007bff;
+		color: #0053b3;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -295,7 +305,7 @@ body {
 }
 
 a {
-	color: #007bff;
+	color: #0053b3;
 	text-decoration: none;
 	font-size: 16px;
 	&:hover {
