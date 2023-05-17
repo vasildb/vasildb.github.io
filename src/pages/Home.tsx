@@ -56,6 +56,7 @@ function Home() {
 						<span>Cypress</span>
 						<span>Hardhat</span>
 						<span>Solidity</span>
+						<span>Docker</span>
 					</div>
 				</div>
 				<div>
@@ -98,6 +99,7 @@ function Home() {
 						<span>AWS</span>
 						<span>MySQL</span>
 						<span>Web Sockets</span>
+						<span>Docker</span>
 					</div>
 				</div>
 				<div>
