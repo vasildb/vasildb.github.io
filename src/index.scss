@@ -55,6 +55,9 @@ body {
 			.php {
 				background-image: url("/assets/images/php-light.svg");
 			}
+			.upwork {
+				background-image: url("/assets/images/upwork-light.svg");
+			}
 		}
 
 		.contact-page {
@@ -208,6 +211,11 @@ body {
 
 		&.php {
 			background-image: url("/assets/images/php-dark.svg");
+		}
+
+		&.upwork {
+			background-image: url("/assets/images/upwork-dark.svg");
+			transform: scale(1.3);
 		}
 	}
 }
