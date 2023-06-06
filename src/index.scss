@@ -166,7 +166,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1220px) {
 	#root {
 		width: 60%;
 		margin: 0 auto;
@@ -360,6 +360,10 @@ a {
 
 				a {
 					color: $black;
+					margin-left: 4px;
+				}
+
+				small {
 					margin-left: 4px;
 				}
 			}

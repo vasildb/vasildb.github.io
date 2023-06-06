@@ -35,11 +35,12 @@ function Home() {
 			<div className="projects">
 				<div>
 					<div className="title">
-						CTO -
 						<a href="https://contentmutual.com" target="_blank">
 							ContentMutual.com
 						</a>
-						<span>Dec 2014 - Nov 2022</span>
+						<span>CTO</span>
+						<br />
+						<small>Dec 2014 - Nov 2022</small>
 					</div>
 					<ul>
 						<li>Created the architecture of the platform with scaling in mind.</li>
@@ -61,11 +62,12 @@ function Home() {
 				</div>
 				<div>
 					<div className="title">
-						Software Engineer -
 						<a href="https://staffconnect-app.com" target="_blank">
 							StaffConnect.net
 						</a>
-						<span>May 2019 - Nov 2021</span>
+						<span>Software Engineer</span>
+						<br />
+						<small>May 2019 - Nov 2021</small>
 					</div>
 					<ul>
 						<li>Worked on building a whole new multi server architecture for the backend while serving 500k users worldwide.</li>
@@ -82,11 +84,12 @@ function Home() {
 				</div>
 				<div>
 					<div className="title">
-						CEO -
 						<a href="https://nulius.com" target="_blank">
 							Nulius.com
 						</a>
-						<span>Jun 2018 - Apr 2019</span>
+						<span>CEO</span>
+						<br />
+						<small>Jun 2018 - Apr 2019</small>
 					</div>
 					<ul>
 						<li>Leading a team of developers and a designer, creating the high level design and coding standards.</li>
@@ -104,11 +107,12 @@ function Home() {
 				</div>
 				<div>
 					<div className="title">
-						Team Lead -
 						<a href="https://www.grabit.io/" target="_blank">
 							GrabIT.mk
 						</a>
-						<span>Apr 2011 - Nov 2013</span>
+						<span>Team Lead</span>
+						<br />
+						<small>Apr 2011 - Nov 2013</small>
 					</div>
 					<ul>
 						<li>Started as a web developer, working on e-Commerce and auction web platforms.</li>
