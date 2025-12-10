@@ -1,0 +1,11 @@
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/vasildb/turshija"
+    }
+  ],
+  "require": {
+    "vasildb/turshija": "dev-main"
+  }
+}
