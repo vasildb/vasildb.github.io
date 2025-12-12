@@ -48,6 +48,34 @@ jobs:
         with:
           path: dist/
 
+      - name: Create gh-pages branch if not exists
+        run: |
+          if ! git rev-parse --verify gh-pages; then
+            git checkout --orphan gh-pages
+            git rm -rf .
+            touch .placeholder
+            git add .placeholder
+            git commit -m "Initialize gh-pages"
+            git push origin gh-pages
+          fi
+
+      - name: Switch to gh-pages
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages
+          git pull origin gh-pages
+
+      - name: Copy dist files
+        run: |
+          rm -rf ./*
+          cp -R dist/* ./
+
+      - name: Commit and push
+        run: |
+          git add -A
+          git commit -m "Deploy $(date)" || echo "No changes"
+          git push origin gh-pages
+
   deploy:
     permissions:
       contents: 'read'
