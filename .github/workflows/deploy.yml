@@ -48,6 +48,11 @@ jobs:
         with:
           path: dist/
 
+      - name: Configure Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Create gh-pages branch if not exists
         run: |
           if ! git rev-parse --verify gh-pages; then
