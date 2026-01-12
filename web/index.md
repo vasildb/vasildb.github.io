@@ -1,7 +1,7 @@
 ---
-title: Vasil Zidrovski
-meta-description: Vasil Zidrovski's personal website
-meta-keywords: personal blog, blog, programming
+title: Vasil
+meta-description: Vasil Zidrovski's website
+meta-keywords: vasil zidrovski, programming, blog, website
 favicon: /assets/images/favicon.ico
-url: /
+base-url: https://vasil.org/
 ---
