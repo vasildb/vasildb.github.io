@@ -19,7 +19,7 @@ jobs:
         run: |
           sudo add-apt-repository ppa:ondrej/php -y
           sudo apt-get update
-          sudo apt-get install -y php8.4 php8.4-cli php8.4-common php8.4-intl php8.4-mbstring php8.4-xml php8.4-curl php8.4-zip
+          sudo apt-get install -y php8.4 php8.4-cli php8.4-common php8.4-intl php8.4-mbstring php8.4-xml php8.4-curl php8.4-zip php8.4-gd
           php -v
 
       - name: Install Composer
